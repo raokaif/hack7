@@ -1,11 +1,9 @@
 #
-# makefile for color utilities C library
-# assumes cmocka (a unit testing framework) is installed on your
-# system
+# makefile for image utilities C library
 #
 
 CC = gcc
-FLAGS = -Wall
+FLAGS = -Wall --std=gnu99
 INCLUDES = -lm
 
 imageDriver: imageUtils.o imageDriver.c
