@@ -7,10 +7,10 @@ FLAGS = -Wall --std=gnu99
 INCLUDES = -lm
 
 imageDriver: imageUtils.o imageDriver.c
-	$(CC) $(FLAGS) $(INCLUDES) imageUtils.o imageDriver.c -o imageDriver
+	$(CC) $(FLAGS) imageUtils.o imageDriver.c -o imageDriver $(INCLUDES)
 
 imageUtils.o: imageUtils.c imageUtils.h
-	$(CC) $(FLAGS) $(INCLUDES) -c imageUtils.c -o imageUtils.o
+	$(CC) $(FLAGS) -c imageUtils.c -o imageUtils.o $(INCLUDES)
 
 clean:
 	rm -f *~ *.o
