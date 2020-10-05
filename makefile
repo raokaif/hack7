@@ -3,7 +3,7 @@
 #
 
 CC = gcc
-FLAGS = -Wall --std=gnu99
+FLAGS = -Wall --std=gnu99 -g 
 INCLUDES = -lm
 
 imageDriver: imageUtils.o imageDriver.c
