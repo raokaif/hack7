@@ -33,6 +33,11 @@ figures/_minted*
 # object files
 *.o
 
+# executables
+imageDriver
+imageMaker
+arrayUtilsTester
+
 #
 solution/
 dev/
