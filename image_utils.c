@@ -7,7 +7,7 @@
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 
-#include "imageUtils.h"
+#include "image_utils.h"
 
 Pixel **loadImage(const char *filePath, int *height, int *width) {
   int x,y,n;
