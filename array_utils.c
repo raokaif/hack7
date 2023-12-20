@@ -1,7 +1,8 @@
 
 
 // place your function definitions here
-enum errorcode{
+enum errorcode
+{
     true,
     false
 };
@@ -19,6 +20,18 @@ int contains(const int *arr, int size, int x)
         }
     }
 }
-int containsWithin(const int *arr, int size, int x, int i, int j){
+int containsWithin(const int *arr, int size, int x, int i, int j)
+{
+    for (; arr[i] <= arr[j]; i++)
+    {
 
+        if (*arr == x)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
