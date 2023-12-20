@@ -1,4 +1,5 @@
-
+#include<stdio.h>
+#include<stdlib.h>
 
 // place your function definitions here
 enum errorcode
