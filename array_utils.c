@@ -32,6 +32,9 @@ int containsWithin(const int *arr, int size, int x, int i, int j)
 }
 int * paddedCopy(const int *arr, int oldSize, int newSize){
     int *newArr = (int *)malloc(newSize * sizeof(int));
+    if (newArr == NULL) {
+        return NULL;
+    }
     int i;
     for (i = 0; i < oldSize && i < newSize; ++i) {
         newArr[i] = arr[i];
@@ -57,6 +60,9 @@ void reverse(int *arr, int size){
 }
 int * reverseCopy(const int *arr, int size){
     int *reversedArr = (int *)malloc(size * sizeof(int));
+     if (reversedArr == NULL) {
+        return NULL;
+    }
         for (int i = 0; i < size; ++i) {
         reversedArr[i] = arr[size - 1 - i];
     }
