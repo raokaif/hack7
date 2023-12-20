@@ -22,7 +22,7 @@ int containsWithin(const int *arr, int size, int x, int i, int j)
     for (; arr[i] <= arr[j]; i++)
     {
 
-        if (*arr == x)
+        if (arr[i] == x)
         {
             return true;
         }
