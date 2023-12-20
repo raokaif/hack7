@@ -14,11 +14,8 @@ int contains(const int *arr, int size, int x)
         {
             return true;
         }
-        else
-        {
-            return false;
-        }
     }
+    return false;
 }
 int containsWithin(const int *arr, int size, int x, int i, int j)
 {
@@ -29,9 +26,6 @@ int containsWithin(const int *arr, int size, int x, int i, int j)
         {
             return true;
         }
-        else
-        {
-            return false;
-        }
     }
+    return false;
 }
